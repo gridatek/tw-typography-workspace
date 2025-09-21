@@ -29,23 +29,50 @@
   --text-9xl: clamp(8rem, 6.5rem + 5vw, 10rem);
   --text-9xl--line-height: 1;
 
-  /* Typography - Using Tailwind's Color Scale */
-  --color-typography-heading: var(--color-gray-900);
-  --color-typography-body: var(--color-gray-700);
-  --color-typography-muted: var(--color-gray-500);
-  --color-typography-border: var(--color-gray-200);
-  --color-typography-code-bg: var(--color-gray-100);
-  --color-typography-code-text: var(--color-gray-800);
+  /* Typography - tw-prose compatible colors */
+  --tw-prose-body: var(--color-gray-700);
+  --tw-prose-headings: var(--color-gray-900);
+  --tw-prose-lead: var(--color-gray-600);
+  --tw-prose-links: var(--color-gray-900);
+  --tw-prose-bold: var(--color-gray-900);
+  --tw-prose-counters: var(--color-gray-500);
+  --tw-prose-bullets: var(--color-gray-400);
+  --tw-prose-hr: var(--color-gray-200);
+  --tw-prose-quotes: var(--color-gray-900);
+  --tw-prose-quote-borders: var(--color-gray-200);
+  --tw-prose-captions: var(--color-gray-500);
+  --tw-prose-kbd: var(--color-gray-900);
+  --tw-prose-kbd-shadows: var(--color-gray-900);
+  --tw-prose-code: var(--color-gray-900);
+  --tw-prose-code-bg: var(--color-gray-100);
+  --tw-prose-pre-code: var(--color-gray-200);
+  --tw-prose-pre-bg: var(--color-gray-800);
+  --tw-prose-th-borders: var(--color-gray-300);
+  --tw-prose-td-borders: var(--color-gray-200);
 }
 
 /* --- Dark Mode Theme --- */
 @media (prefers-color-scheme: dark) {
   @theme {
-    --color-typography-heading: var(--color-gray-50);
-    --color-typography-body: var(--color-gray-200);
-    --color-typography-muted: var(--color-gray-400);
-    --color-typography-border: var(--color-gray-600);
-    --color-typography-code-bg: var(--color-gray-700);
-    --color-typography-code-text: var(--color-gray-200);
+    /* tw-prose dark mode colors */
+    --tw-prose-body: var(--color-gray-300);
+    --tw-prose-headings: var(--color-gray-50);
+    --tw-prose-lead: var(--color-gray-400);
+    --tw-prose-links: var(--color-gray-100);
+    --tw-prose-bold: var(--color-gray-50);
+    --tw-prose-counters: var(--color-gray-400);
+    --tw-prose-bullets: var(--color-gray-500);
+    --tw-prose-hr: var(--color-gray-600);
+    --tw-prose-quotes: var(--color-gray-100);
+    --tw-prose-quote-borders: var(--color-gray-600);
+    --tw-prose-captions: var(--color-gray-400);
+    --tw-prose-kbd: var(--color-gray-100);
+    --tw-prose-kbd-shadows: var(--color-gray-900);
+    --tw-prose-code: var(--color-gray-100);
+    --tw-prose-code-bg: var(--color-gray-800);
+    --tw-prose-pre-code: var(--color-gray-300);
+    --tw-prose-pre-bg: var(--color-gray-900);
+    --tw-prose-th-borders: var(--color-gray-600);
+    --tw-prose-td-borders: var(--color-gray-700);
   }
 }

@@ -295,7 +295,7 @@ import { Component } from '@angular/core';
       .lead {
         font-size: clamp(1.125rem, 1rem + 0.75vw, 1.375rem);
         line-height: 1.6;
-        color: var(--color-typography-body);
+        color: var(--tw-prose-lead);
         font-weight: var(--font-weight-normal);
         margin-bottom: calc(6 * var(--spacing));
       }
