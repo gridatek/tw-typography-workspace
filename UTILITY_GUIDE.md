@@ -175,49 +175,68 @@ Define variables in your CSS:
 
 ## Advanced Examples from tw-typography
 
-### Typography Heading Utility
+### Typography Heading Utility with Tailwind v4 Variables
 
 ```css
 @utility typography-h1 {
-  font-size: var(--typography-size-h1);
-  line-height: var(--typography-leading-h1);
-  font-weight: var(--typography-weight-heading);
-  color: var(--typography-color-heading);
-  margin-bottom: var(--typography-spacing-lg);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-4xl);
+  line-height: var(--text-4xl--line-height);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-typography-heading);
+  margin-bottom: calc(6 * var(--spacing));
+  font-family: var(--font-sans);
 }
 ```
 
-### Code Block Utility
+### Code Block Utility with Standard Variables
 
 ```css
 @utility typography-pre {
-  font-size: var(--typography-size-small);
-  font-family: var(--typography-font-mono);
-  background-color: var(--typography-color-code-bg);
-  color: var(--typography-color-code-text);
-  padding: var(--typography-spacing-md);
-  border-radius: 0.5rem;
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  background-color: var(--color-typography-code-bg);
+  color: var(--color-typography-code-text);
+  padding: calc(4 * var(--spacing));
+  border-radius: var(--radius-lg);
   overflow-x: auto;
-  margin: var(--typography-spacing-lg) 0;
-  line-height: 1.5;
+  margin: calc(6 * var(--spacing)) 0;
+  line-height: var(--leading-normal);
 }
 ```
 
-### Interactive Link Utility
+### Interactive Link Utility with Tailwind Colors
 
 ```css
 @utility typography-link {
-  color: #2563eb;
+  color: var(--color-blue-600);
   text-decoration: underline;
-  text-decoration-color: #93c5fd;
+  text-decoration-color: var(--color-blue-300);
   text-underline-offset: 2px;
   transition: all 0.2s ease;
 
   @variant hover {
-    color: #1d4ed8;
-    text-decoration-color: #2563eb;
+    color: var(--color-blue-700);
+    text-decoration-color: var(--color-blue-600);
   }
+}
+```
+
+### Fluid Typography with @theme Integration
+
+```css
+/* Define in @theme block */
+@theme {
+  --text-custom: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --text-custom--line-height: calc(1.4 / 1);
+}
+
+/* Use in utility */
+@utility my-fluid-heading {
+  font-size: var(--text-custom);
+  line-height: var(--text-custom--line-height);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-typography-heading);
+  margin-bottom: calc(4 * var(--spacing));
 }
 ```
 
