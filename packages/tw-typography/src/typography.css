@@ -146,11 +146,11 @@
   text-decoration-color: #93c5fd;
   text-underline-offset: 2px;
   transition: all 0.2s ease;
-}
 
-@utility typography-link:hover {
-  color: #1d4ed8;
-  text-decoration-color: #2563eb;
+  @variant hover {
+    color: #1d4ed8;
+    text-decoration-color: #2563eb;
+  }
 }
 
 /* --- Prose Wrapper (follows typography guidelines) --- */
