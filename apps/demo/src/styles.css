@@ -1,1 +1,62 @@
 @import 'tailwindcss';
+
+/* --- CSS Variables (Single Source of Truth) --- */
+:root {
+  /* Colors */
+  --typography-color-heading: #111827;
+  --typography-color-body: #1f2937;
+  --typography-color-muted: #6b7280;
+  --typography-color-border: #d1d5db;
+  --typography-color-code-bg: #f3f4f6;
+  --typography-color-code-text: #1f2937;
+
+  /* Typography Scale */
+  --typography-size-h1: 2.25rem;
+  --typography-size-h2: 1.875rem;
+  --typography-size-h3: 1.5rem;
+  --typography-size-h4: 1.25rem;
+  --typography-size-h5: 1.125rem;
+  --typography-size-h6: 1rem;
+  --typography-size-body: 1rem;
+  --typography-size-small: 0.875rem;
+
+  /* Line Heights */
+  --typography-leading-h1: 2.5rem;
+  --typography-leading-h2: 2.25rem;
+  --typography-leading-h3: 2rem;
+  --typography-leading-h4: 1.75rem;
+  --typography-leading-h5: 1.75rem;
+  --typography-leading-h6: 1.5rem;
+  --typography-leading-body: 1.625;
+  --typography-leading-tight: 1.25;
+
+  /* Font Weights */
+  --typography-weight-heading: 700;
+  --typography-weight-subheading: 600;
+  --typography-weight-body: 400;
+  --typography-weight-bold: 600;
+
+  /* Spacing */
+  --typography-spacing-xs: 0.5rem;
+  --typography-spacing-sm: 0.75rem;
+  --typography-spacing-md: 1rem;
+  --typography-spacing-lg: 1.5rem;
+  --typography-spacing-xl: 2rem;
+  --typography-spacing-2xl: 2.5rem;
+
+  /* Font Families */
+  --typography-font-sans: ui-sans-serif, system-ui, sans-serif;
+  --typography-font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Monaco, Consolas, monospace;
+}
+
+/* --- Dark Mode Variables --- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --typography-color-heading: #f9fafb;
+    --typography-color-body: #e5e7eb;
+    --typography-color-muted: #9ca3af;
+    --typography-color-border: #4b5563;
+    --typography-color-code-bg: #374151;
+    --typography-color-code-text: #e5e7eb;
+  }
+}
