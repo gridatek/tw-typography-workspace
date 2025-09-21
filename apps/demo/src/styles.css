@@ -51,15 +51,3 @@
   --typography-font-sans: ui-sans-serif, system-ui, sans-serif;
   --typography-font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Monaco, Consolas, monospace;
 }
-
-/* --- Dark Mode Variables --- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --typography-color-heading: #f9fafb;
-    --typography-color-body: #e5e7eb;
-    --typography-color-muted: #9ca3af;
-    --typography-color-border: #4b5563;
-    --typography-color-code-bg: #374151;
-    --typography-color-code-text: #e5e7eb;
-  }
-}
