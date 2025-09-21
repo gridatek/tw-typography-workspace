@@ -1,43 +1,55 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
+    <div class="min-h-screen bg-white dark:bg-gray-900">
+      <!-- Navigation -->
+      <nav class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex items-center">
+              <h1 class="typography-h6 !margin-0">tw-typography</h1>
+              <span class="typography-small ml-2 text-gray-500">Responsive Typography System</span>
+            </div>
 
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+            <div class="flex items-center space-x-8">
+              <a
+                routerLink="/showcase"
+                routerLinkActive="text-blue-600 border-b-2 border-blue-600"
+                class="text-gray-900 dark:text-gray-100 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+              >
+                Typography Showcase
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <!-- Individual control with standalone utilities -->
-    <h1 class="typography-h1">Page Title</h1>
-    <h2 class="typography-h2">Section Title</h2>
-    <p class="typography-p">Body paragraph with proper spacing.</p>
-    <blockquote class="typography-blockquote">A thoughtful quote</blockquote>
-    <code class="typography-code">inline code</code>
-    <small class="typography-small">Small text</small>
+      <!-- Main Content -->
+      <main>
+        <router-outlet />
+      </main>
 
-    <!-- Rich text block using prose wrapper -->
-    <article class="prose">
-      <h1>Article Title</h1>
-      <p>This paragraph automatically gets the right styling.</p>
-      <h2>Subsection</h2>
-      <p>Another paragraph with <strong>bold text</strong> and <em>italics</em>.</p>
-      <blockquote>
-        <p>A blockquote that follows the typography guidelines.</p>
-      </blockquote>
-      <ul>
-        <li>List item one</li>
-        <li>List item two</li>
-      </ul>
-      <pre><code>// Code block
-const example = 'formatted code';</code></pre>
-    </article>
-
-    <router-outlet />
+      <!-- Footer -->
+      <footer
+        class="border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 mt-16"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div class="text-center">
+            <p class="typography-small text-gray-600 dark:text-gray-400">
+              Built with tw-typography • Fluid Responsive Typography System
+            </p>
+            <p class="typography-small text-gray-500 dark:text-gray-500 mt-2">
+              Resize your browser window to see the typography scale smoothly
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   `,
   styles: [],
 })
-export class App {
-  protected readonly title = signal('demo');
-}
+export class App {}
