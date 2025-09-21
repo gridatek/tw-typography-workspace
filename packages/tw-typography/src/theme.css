@@ -29,26 +29,6 @@
   --text-9xl: clamp(8rem, 6.5rem + 5vw, 10rem);
   --text-9xl--line-height: 1;
 
-  /* Typography - Semantic Heading Sizes */
-  --text-h1: var(--text-4xl);
-  --text-h2: var(--text-3xl);
-  --text-h3: var(--text-2xl);
-  --text-h4: var(--text-xl);
-  --text-h5: var(--text-lg);
-  --text-h6: var(--text-base);
-  --text-body: var(--text-base);
-  --text-small: var(--text-sm);
-
-  /* Typography - Custom Line Heights (extending Tailwind's leading scale) */
-  --leading-h1: clamp(2.5rem, 2.25rem + 2.5vw, 3.75rem);
-  --leading-h2: clamp(2.25rem, 2rem + 2vw, 3rem);
-  --leading-h3: clamp(2rem, 1.75rem + 1.25vw, 2.5rem);
-  --leading-h4: clamp(1.75rem, 1.5rem + 1vw, 2.125rem);
-  --leading-h5: clamp(1.75rem, 1.5rem + 0.75vw, 2rem);
-  --leading-h6: clamp(1.5rem, 1.25rem + 0.5vw, 1.75rem);
-  --leading-body: var(--leading-relaxed);
-  --leading-tight: var(--leading-tight);
-
   /* Typography - Custom Fluid Spacing (extending Tailwind's spacing) */
   --spacing-typography-xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.625rem);
   --spacing-typography-sm: clamp(0.75rem, 0.675rem + 0.375vw, 0.9375rem);
