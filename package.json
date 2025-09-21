@@ -1,7 +1,7 @@
 {
-  "name": "tw-typography-workspace",
+  "name": "tw-fluid-typography-workspace",
   "version": "1.0.0",
-  "description": "CSS Variables Typography System for Tailwind CSS v4",
+  "description": "Fluid CSS Variables Typography System for Tailwind CSS v4",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -12,7 +12,7 @@
     "dev": "npm run dev --workspaces",
     "demo": "npm run start --workspace=@tw-typography/demo",
     "build:demo": "npm run build --workspace=@tw-typography/demo",
-    "build:package": "npm run build --workspace=tw-typography",
+    "build:package": "npm run build --workspace=tw-fluid-typography",
     "lint": "npm run lint --workspaces",
     "test": "npm run test --workspaces",
     "clean": "npm run clean --workspaces && rm -rf node_modules",
@@ -40,6 +40,7 @@
   "keywords": [
     "css",
     "typography",
+    "fluid-typography",
     "tailwindcss",
     "css-variables",
     "design-system",

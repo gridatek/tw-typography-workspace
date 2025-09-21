@@ -1,4 +1,4 @@
 @import 'tailwindcss';
 
-/* Import complete tw-typography system */
-@import '../../../packages/tw-typography/src/index.css';
+/* Import complete tw-fluid-typography system */
+@import '../../../packages/tw-fluid-typography/src/index.css';
