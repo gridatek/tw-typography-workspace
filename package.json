@@ -1,0 +1,58 @@
+{
+  "name": "tw-typography-workspace",
+  "version": "1.0.0",
+  "description": "CSS Variables Typography System for Tailwind CSS v4",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "demo": "npm run start --workspace=@tw-typography/demo",
+    "build:demo": "npm run build --workspace=@tw-typography/demo",
+    "build:package": "npm run build --workspace=tw-typography",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces",
+    "clean": "npm run clean --workspaces && rm -rf node_modules",
+    "install:all": "npm install",
+    "version:patch": "npm version patch --workspaces",
+    "version:minor": "npm version minor --workspaces",
+    "version:major": "npm version major --workspaces",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.2",
+    "@angular/cli": "^20.3.2",
+    "@types/node": "^24.5.2",
+    "autoprefixer": "^10.4.21",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.6",
+    "postcss": "^8.5.6",
+    "prettier": "3.6.2",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  },
+  "keywords": [
+    "css",
+    "typography",
+    "tailwindcss",
+    "css-variables",
+    "design-system",
+    "utilities"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/tw-typography.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
