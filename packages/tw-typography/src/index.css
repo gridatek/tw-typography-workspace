@@ -1,0 +1,7 @@
+/* index.css - Complete Typography System for Tailwind CSS v4 */
+
+/* Import theme configuration */
+@import './theme.css';
+
+/* Import typography utilities */
+@import './typography.css';
