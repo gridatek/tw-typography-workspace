@@ -21,12 +21,6 @@
   --leading-body: var(--leading-relaxed);
   --leading-tight: var(--leading-tight);
 
-  /* Typography - Using Tailwind's Font Weights */
-  --font-weight-heading: var(--font-weight-bold);
-  --font-weight-subheading: var(--font-weight-semibold);
-  --font-weight-body: var(--font-weight-normal);
-  --font-weight-bold: var(--font-weight-bold);
-
   /* Typography - Custom Fluid Spacing (extending Tailwind's spacing) */
   --spacing-typography-xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.625rem);
   --spacing-typography-sm: clamp(0.75rem, 0.675rem + 0.375vw, 0.9375rem);
