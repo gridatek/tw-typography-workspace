@@ -29,14 +29,6 @@
   --text-9xl: clamp(8rem, 6.5rem + 5vw, 10rem);
   --text-9xl--line-height: 1;
 
-  /* Typography - Custom Fluid Spacing (extending Tailwind's spacing) */
-  --spacing-typography-xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.625rem);
-  --spacing-typography-sm: clamp(0.75rem, 0.675rem + 0.375vw, 0.9375rem);
-  --spacing-typography-md: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
-  --spacing-typography-lg: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
-  --spacing-typography-xl: clamp(2rem, 1.8rem + 1vw, 2.5rem);
-  --spacing-typography-2xl: clamp(2.5rem, 2.25rem + 1.25vw, 3.125rem);
-
   /* Typography - Using Tailwind's Color Scale */
   --color-typography-heading: var(--color-gray-900);
   --color-typography-body: var(--color-gray-700);
