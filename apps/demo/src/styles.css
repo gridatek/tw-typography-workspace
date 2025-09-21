@@ -1,7 +1,10 @@
 @import 'tailwindcss';
 
+/* Import tw-typography from local package */
+@import '../../../packages/tw-typography/src/typography.css';
+
 /* --- CSS Variables (Single Source of Truth) --- */
-:root {
+@theme {
   /* Colors */
   --typography-color-heading: #111827;
   --typography-color-body: #1f2937;

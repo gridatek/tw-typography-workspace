@@ -3,18 +3,12 @@
   "version": "1.0.0",
   "description": "CSS Variables Typography System for Tailwind CSS v4",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
-    "dist/",
-    "src/",
-    "README.md",
-    "LICENSE"
+    "dist/"
   ],
   "scripts": {
-    "build": "npm run build:css && npm run build:types",
-    "build:css": "postcss src/typography.css -o dist/typography.css",
-    "build:types": "tsc --emitDeclarationOnly --outDir dist",
-    "dev": "postcss src/typography.css -o dist/typography.css --watch",
+    "build": "node build.js",
+    "dev": "node build.js",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build"
   },
