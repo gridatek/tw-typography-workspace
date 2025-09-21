@@ -1,33 +1,20 @@
 /* theme.css - Tailwind CSS v4 Typography Theme Configuration */
 
 @theme {
-  /* Typography - Fluid Text Sizes (extending Tailwind's text scale) */
-  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-  --text-xs--line-height: calc(1 / 0.75);
-  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
-  --text-sm--line-height: calc(1.25 / 0.875);
-  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
-  --text-base--line-height: calc(1.5 / 1);
-  --text-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
-  --text-lg--line-height: calc(1.75 / 1.125);
-  --text-xl: clamp(1.25rem, 1.125rem + 0.75vw, 1.5rem);
-  --text-xl--line-height: calc(1.75 / 1.25);
-  --text-2xl: clamp(1.5rem, 1.375rem + 1vw, 1.875rem);
-  --text-2xl--line-height: calc(2 / 1.5);
-  --text-3xl: clamp(1.875rem, 1.625rem + 1.5vw, 2.25rem);
-  --text-3xl--line-height: calc(2.25 / 1.875);
-  --text-4xl: clamp(2.25rem, 2rem + 2vw, 3rem);
-  --text-4xl--line-height: calc(2.5 / 2.25);
-  --text-5xl: clamp(3rem, 2.5rem + 2.5vw, 3.75rem);
-  --text-5xl--line-height: 1;
-  --text-6xl: clamp(3.75rem, 3rem + 3vw, 4.5rem);
-  --text-6xl--line-height: 1;
-  --text-7xl: clamp(4.5rem, 3.75rem + 3.5vw, 6rem);
-  --text-7xl--line-height: 1;
-  --text-8xl: clamp(6rem, 5rem + 4vw, 8rem);
-  --text-8xl--line-height: 1;
-  --text-9xl: clamp(8rem, 6.5rem + 5vw, 10rem);
-  --text-9xl--line-height: 1;
+  /* Typography - Fluid Text Sizes (using Tailwind's standard scale with fluid behavior) */
+  --text-fluid-xs: clamp(var(--text-xs), 0.7rem + 0.5vw, var(--text-sm));
+  --text-fluid-sm: clamp(var(--text-sm), 0.8rem + 0.75vw, var(--text-base));
+  --text-fluid-base: clamp(var(--text-base), 0.9rem + 1vw, var(--text-lg));
+  --text-fluid-lg: clamp(var(--text-lg), 1rem + 1.25vw, var(--text-xl));
+  --text-fluid-xl: clamp(var(--text-xl), 1.125rem + 1.5vw, var(--text-2xl));
+  --text-fluid-2xl: clamp(var(--text-2xl), 1.375rem + 2vw, var(--text-3xl));
+  --text-fluid-3xl: clamp(var(--text-3xl), 1.625rem + 2.5vw, var(--text-4xl));
+  --text-fluid-4xl: clamp(var(--text-4xl), 2rem + 3vw, var(--text-5xl));
+  --text-fluid-5xl: clamp(var(--text-5xl), 2.5rem + 3.5vw, var(--text-6xl));
+  --text-fluid-6xl: clamp(var(--text-6xl), 3rem + 4vw, var(--text-7xl));
+  --text-fluid-7xl: clamp(var(--text-7xl), 3.75rem + 4.5vw, var(--text-8xl));
+  --text-fluid-8xl: clamp(var(--text-8xl), 5rem + 5vw, var(--text-9xl));
+  --text-fluid-9xl: clamp(var(--text-9xl), 6.5rem + 5.5vw, 12rem);
 
   /* Typography - tw-prose compatible colors */
   --tw-prose-body: var(--color-gray-700);

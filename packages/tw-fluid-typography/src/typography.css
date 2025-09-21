@@ -2,7 +2,7 @@
 
 /* --- Typography Utilities --- */
 @utility typography-h1 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-fluid-4xl);
   line-height: var(--text-4xl--line-height);
   font-weight: var(--font-weight-bold);
   color: var(--tw-prose-headings);
@@ -11,7 +11,7 @@
 }
 
 @utility typography-h2 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-fluid-3xl);
   line-height: var(--text-3xl--line-height);
   font-weight: var(--font-weight-bold);
   color: var(--tw-prose-headings);
@@ -21,7 +21,7 @@
 }
 
 @utility typography-h3 {
-  font-size: var(--text-2xl);
+  font-size: var(--text-fluid-2xl);
   line-height: var(--text-2xl--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--tw-prose-headings);
@@ -31,7 +31,7 @@
 }
 
 @utility typography-h4 {
-  font-size: var(--text-xl);
+  font-size: var(--text-fluid-xl);
   line-height: var(--text-xl--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--tw-prose-headings);
@@ -41,7 +41,7 @@
 }
 
 @utility typography-h5 {
-  font-size: var(--text-lg);
+  font-size: var(--text-fluid-lg);
   line-height: var(--text-lg--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--tw-prose-headings);
@@ -51,7 +51,7 @@
 }
 
 @utility typography-h6 {
-  font-size: var(--text-base);
+  font-size: var(--text-fluid-base);
   line-height: var(--text-base--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--tw-prose-headings);
@@ -61,7 +61,7 @@
 }
 
 @utility typography-p {
-  font-size: var(--text-base);
+  font-size: var(--text-fluid-base);
   line-height: var(--text-base--line-height);
   font-weight: var(--font-weight-normal);
   color: var(--tw-prose-body);
@@ -70,7 +70,7 @@
 }
 
 @utility typography-small {
-  font-size: var(--text-sm);
+  font-size: var(--text-fluid-sm);
   line-height: var(--text-sm--line-height);
   font-weight: var(--font-weight-normal);
   color: var(--tw-prose-captions);
@@ -78,7 +78,7 @@
 }
 
 @utility typography-blockquote {
-  font-size: var(--text-base);
+  font-size: var(--text-fluid-base);
   line-height: var(--text-base--line-height);
   font-style: italic;
   color: var(--tw-prose-captions);
@@ -89,7 +89,7 @@
 }
 
 @utility typography-code {
-  font-size: var(--text-sm);
+  font-size: var(--text-fluid-sm);
   font-family: var(--font-mono);
   background-color: var(--tw-prose-code-bg);
   color: var(--tw-prose-code);
@@ -99,7 +99,7 @@
 }
 
 @utility typography-pre {
-  font-size: var(--text-sm);
+  font-size: var(--text-fluid-sm);
   font-family: var(--font-mono);
   background-color: var(--tw-prose-pre-bg);
   color: var(--tw-prose-pre-code);
@@ -123,7 +123,7 @@
 }
 
 @utility typography-li {
-  font-size: var(--text-base);
+  font-size: var(--text-fluid-base);
   line-height: var(--text-base--line-height);
   color: var(--tw-prose-body);
   margin-bottom: calc(2 * var(--spacing));
@@ -155,7 +155,7 @@
 
 /* --- Prose Wrapper --- */
 @utility prose {
-  font-size: var(--text-base);
+  font-size: var(--text-fluid-base);
   line-height: var(--text-base--line-height);
   color: var(--tw-prose-body);
   font-family: var(--font-sans);
