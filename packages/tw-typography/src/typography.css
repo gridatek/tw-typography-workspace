@@ -2,8 +2,8 @@
 
 /* --- Typography Utilities --- */
 @utility typography-h1 {
-  font-size: var(--text-h1);
-  line-height: var(--leading-h1);
+  font-size: var(--text-4xl);
+  line-height: var(--text-4xl--line-height);
   font-weight: var(--font-weight-bold);
   color: var(--color-typography-heading);
   margin-bottom: var(--spacing-typography-lg);
@@ -11,8 +11,8 @@
 }
 
 @utility typography-h2 {
-  font-size: var(--text-h2);
-  line-height: var(--leading-h2);
+  font-size: var(--text-3xl);
+  line-height: var(--text-3xl--line-height);
   font-weight: var(--font-weight-bold);
   color: var(--color-typography-heading);
   margin-top: var(--spacing-typography-xl);
@@ -21,8 +21,8 @@
 }
 
 @utility typography-h3 {
-  font-size: var(--text-h3);
-  line-height: var(--leading-h3);
+  font-size: var(--text-2xl);
+  line-height: var(--text-2xl--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--color-typography-heading);
   margin-top: var(--spacing-typography-lg);
@@ -31,8 +31,8 @@
 }
 
 @utility typography-h4 {
-  font-size: var(--text-h4);
-  line-height: var(--leading-h4);
+  font-size: var(--text-xl);
+  line-height: var(--text-xl--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--color-typography-heading);
   margin-top: var(--spacing-typography-lg);
@@ -41,8 +41,8 @@
 }
 
 @utility typography-h5 {
-  font-size: var(--text-h5);
-  line-height: var(--leading-h5);
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--color-typography-heading);
   margin-top: var(--spacing-typography-md);
@@ -51,8 +51,8 @@
 }
 
 @utility typography-h6 {
-  font-size: var(--text-h6);
-  line-height: var(--leading-h6);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
   font-weight: var(--font-weight-semibold);
   color: var(--color-typography-heading);
   margin-top: var(--spacing-typography-md);
@@ -61,8 +61,8 @@
 }
 
 @utility typography-p {
-  font-size: var(--text-body);
-  line-height: var(--leading-body);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
   font-weight: var(--font-weight-normal);
   color: var(--color-typography-body);
   margin-bottom: var(--spacing-typography-md);
@@ -70,16 +70,16 @@
 }
 
 @utility typography-small {
-  font-size: var(--text-small);
-  line-height: var(--leading-body);
+  font-size: var(--text-sm);
+  line-height: var(--text-sm--line-height);
   font-weight: var(--font-weight-normal);
   color: var(--color-typography-muted);
   font-family: var(--font-sans);
 }
 
 @utility typography-blockquote {
-  font-size: var(--text-body);
-  line-height: var(--leading-body);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
   font-style: italic;
   color: var(--color-typography-muted);
   border-left: 4px solid var(--color-typography-border);
@@ -89,7 +89,7 @@
 }
 
 @utility typography-code {
-  font-size: var(--text-small);
+  font-size: var(--text-sm);
   font-family: var(--font-mono);
   background-color: var(--color-typography-code-bg);
   color: var(--color-typography-code-text);
@@ -99,7 +99,7 @@
 }
 
 @utility typography-pre {
-  font-size: var(--text-small);
+  font-size: var(--text-sm);
   font-family: var(--font-mono);
   background-color: var(--color-typography-code-bg);
   color: var(--color-typography-code-text);
@@ -123,8 +123,8 @@
 }
 
 @utility typography-li {
-  font-size: var(--text-body);
-  line-height: var(--leading-body);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
   color: var(--color-typography-body);
   margin-bottom: var(--spacing-typography-xs);
   font-family: var(--font-sans);
@@ -155,8 +155,8 @@
 
 /* --- Prose Wrapper --- */
 @utility prose {
-  font-size: var(--text-body);
-  line-height: var(--leading-body);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
   color: var(--color-typography-body);
   font-family: var(--font-sans);
   max-width: 65ch;
