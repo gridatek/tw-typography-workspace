@@ -162,155 +162,71 @@
   max-width: 65ch;
 
   & h1 {
-    font-size: var(--typography-size-h1);
-    line-height: var(--typography-leading-h1);
-    font-weight: var(--typography-weight-heading);
-    color: var(--typography-color-heading);
-    margin-bottom: var(--typography-spacing-lg);
-    font-family: var(--typography-font-sans);
+    @apply typography-h1;
   }
 
   & h2 {
-    font-size: var(--typography-size-h2);
-    line-height: var(--typography-leading-h2);
-    font-weight: var(--typography-weight-heading);
-    color: var(--typography-color-heading);
-    margin-top: var(--typography-spacing-xl);
-    margin-bottom: var(--typography-spacing-md);
-    font-family: var(--typography-font-sans);
+    @apply typography-h2;
   }
 
   & h3 {
-    font-size: var(--typography-size-h3);
-    line-height: var(--typography-leading-h3);
-    font-weight: var(--typography-weight-subheading);
-    color: var(--typography-color-heading);
-    margin-top: var(--typography-spacing-lg);
-    margin-bottom: var(--typography-spacing-sm);
-    font-family: var(--typography-font-sans);
+    @apply typography-h3;
   }
 
   & h4 {
-    font-size: var(--typography-size-h4);
-    line-height: var(--typography-leading-h4);
-    font-weight: var(--typography-weight-subheading);
-    color: var(--typography-color-heading);
-    margin-top: var(--typography-spacing-lg);
-    margin-bottom: var(--typography-spacing-sm);
-    font-family: var(--typography-font-sans);
+    @apply typography-h4;
   }
 
   & h5 {
-    font-size: var(--typography-size-h5);
-    line-height: var(--typography-leading-h5);
-    font-weight: var(--typography-weight-subheading);
-    color: var(--typography-color-heading);
-    margin-top: var(--typography-spacing-md);
-    margin-bottom: var(--typography-spacing-xs);
-    font-family: var(--typography-font-sans);
+    @apply typography-h5;
   }
 
   & h6 {
-    font-size: var(--typography-size-h6);
-    line-height: var(--typography-leading-h6);
-    font-weight: var(--typography-weight-subheading);
-    color: var(--typography-color-heading);
-    margin-top: var(--typography-spacing-md);
-    margin-bottom: var(--typography-spacing-xs);
-    font-family: var(--typography-font-sans);
+    @apply typography-h6;
   }
 
   & p {
-    font-size: var(--typography-size-body);
-    line-height: var(--typography-leading-body);
-    font-weight: var(--typography-weight-body);
-    color: var(--typography-color-body);
-    margin-bottom: var(--typography-spacing-md);
-    font-family: var(--typography-font-sans);
+    @apply typography-p;
   }
 
   & small {
-    font-size: var(--typography-size-small);
-    line-height: var(--typography-leading-body);
-    font-weight: var(--typography-weight-body);
-    color: var(--typography-color-muted);
-    font-family: var(--typography-font-sans);
+    @apply typography-small;
   }
 
   & blockquote {
-    font-size: var(--typography-size-body);
-    line-height: var(--typography-leading-body);
-    font-style: italic;
-    color: var(--typography-color-muted);
-    border-left: 4px solid var(--typography-color-border);
-    padding-left: var(--typography-spacing-md);
-    margin: var(--typography-spacing-lg) 0;
-    font-family: var(--typography-font-sans);
+    @apply typography-blockquote;
   }
 
   & code {
-    font-size: var(--typography-size-small);
-    font-family: var(--typography-font-mono);
-    background-color: var(--typography-color-code-bg);
-    color: var(--typography-color-code-text);
-    padding: 0.125rem 0.375rem;
-    border-radius: 0.25rem;
-    font-weight: 500;
+    @apply typography-code;
   }
 
   & pre {
-    font-size: var(--typography-size-small);
-    font-family: var(--typography-font-mono);
-    background-color: var(--typography-color-code-bg);
-    color: var(--typography-color-code-text);
-    padding: var(--typography-spacing-md);
-    border-radius: 0.5rem;
-    overflow-x: auto;
-    margin: var(--typography-spacing-lg) 0;
-    line-height: 1.5;
+    @apply typography-pre;
   }
 
   & ul {
-    margin: var(--typography-spacing-md) 0;
-    padding-left: var(--typography-spacing-lg);
-    list-style-type: disc;
+    @apply typography-ul;
   }
 
   & ol {
-    margin: var(--typography-spacing-md) 0;
-    padding-left: var(--typography-spacing-lg);
-    list-style-type: decimal;
+    @apply typography-ol;
   }
 
   & li {
-    font-size: var(--typography-size-body);
-    line-height: var(--typography-leading-body);
-    color: var(--typography-color-body);
-    margin-bottom: var(--typography-spacing-xs);
-    font-family: var(--typography-font-sans);
+    @apply typography-li;
   }
 
   & strong {
-    font-weight: var(--typography-weight-bold);
-    color: var(--typography-color-heading);
+    @apply typography-strong;
   }
 
   & em {
-    font-style: italic;
-    color: var(--typography-color-body);
+    @apply typography-em;
   }
 
   & a {
-    color: #2563eb;
-    text-decoration: underline;
-    text-decoration-color: #93c5fd;
-    text-underline-offset: 2px;
-    transition: all 0.2s ease;
-
-    @variant hover {
-      color: #1d4ed8;
-      text-decoration-color: #2563eb;
-    }
+    @apply typography-link;
   }
 }
 
