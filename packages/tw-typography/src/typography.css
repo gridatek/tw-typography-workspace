@@ -1,164 +1,164 @@
-/* typography.css */
+/* typography.css - Typography Utilities for Tailwind CSS v4 */
 
-/* --- Standalone Typography Utilities --- */
+/* --- Typography Utilities --- */
 @utility typography-h1 {
-  font-size: var(--typography-size-h1);
-  line-height: var(--typography-leading-h1);
-  font-weight: var(--typography-weight-heading);
-  color: var(--typography-color-heading);
-  margin-bottom: var(--typography-spacing-lg);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-h1);
+  line-height: var(--leading-h1);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-typography-heading);
+  margin-bottom: var(--spacing-typography-lg);
+  font-family: var(--font-sans);
 }
 
 @utility typography-h2 {
-  font-size: var(--typography-size-h2);
-  line-height: var(--typography-leading-h2);
-  font-weight: var(--typography-weight-heading);
-  color: var(--typography-color-heading);
-  margin-top: var(--typography-spacing-xl);
-  margin-bottom: var(--typography-spacing-md);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-h2);
+  line-height: var(--leading-h2);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-typography-heading);
+  margin-top: var(--spacing-typography-xl);
+  margin-bottom: var(--spacing-typography-md);
+  font-family: var(--font-sans);
 }
 
 @utility typography-h3 {
-  font-size: var(--typography-size-h3);
-  line-height: var(--typography-leading-h3);
-  font-weight: var(--typography-weight-subheading);
-  color: var(--typography-color-heading);
-  margin-top: var(--typography-spacing-lg);
-  margin-bottom: var(--typography-spacing-sm);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-h3);
+  line-height: var(--leading-h3);
+  font-weight: var(--font-weight-subheading);
+  color: var(--color-typography-heading);
+  margin-top: var(--spacing-typography-lg);
+  margin-bottom: var(--spacing-typography-sm);
+  font-family: var(--font-sans);
 }
 
 @utility typography-h4 {
-  font-size: var(--typography-size-h4);
-  line-height: var(--typography-leading-h4);
-  font-weight: var(--typography-weight-subheading);
-  color: var(--typography-color-heading);
-  margin-top: var(--typography-spacing-lg);
-  margin-bottom: var(--typography-spacing-sm);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-h4);
+  line-height: var(--leading-h4);
+  font-weight: var(--font-weight-subheading);
+  color: var(--color-typography-heading);
+  margin-top: var(--spacing-typography-lg);
+  margin-bottom: var(--spacing-typography-sm);
+  font-family: var(--font-sans);
 }
 
 @utility typography-h5 {
-  font-size: var(--typography-size-h5);
-  line-height: var(--typography-leading-h5);
-  font-weight: var(--typography-weight-subheading);
-  color: var(--typography-color-heading);
-  margin-top: var(--typography-spacing-md);
-  margin-bottom: var(--typography-spacing-xs);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-h5);
+  line-height: var(--leading-h5);
+  font-weight: var(--font-weight-subheading);
+  color: var(--color-typography-heading);
+  margin-top: var(--spacing-typography-md);
+  margin-bottom: var(--spacing-typography-xs);
+  font-family: var(--font-sans);
 }
 
 @utility typography-h6 {
-  font-size: var(--typography-size-h6);
-  line-height: var(--typography-leading-h6);
-  font-weight: var(--typography-weight-subheading);
-  color: var(--typography-color-heading);
-  margin-top: var(--typography-spacing-md);
-  margin-bottom: var(--typography-spacing-xs);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-h6);
+  line-height: var(--leading-h6);
+  font-weight: var(--font-weight-subheading);
+  color: var(--color-typography-heading);
+  margin-top: var(--spacing-typography-md);
+  margin-bottom: var(--spacing-typography-xs);
+  font-family: var(--font-sans);
 }
 
 @utility typography-p {
-  font-size: var(--typography-size-body);
-  line-height: var(--typography-leading-body);
-  font-weight: var(--typography-weight-body);
-  color: var(--typography-color-body);
-  margin-bottom: var(--typography-spacing-md);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  font-weight: var(--font-weight-body);
+  color: var(--color-typography-body);
+  margin-bottom: var(--spacing-typography-md);
+  font-family: var(--font-sans);
 }
 
 @utility typography-small {
-  font-size: var(--typography-size-small);
-  line-height: var(--typography-leading-body);
-  font-weight: var(--typography-weight-body);
-  color: var(--typography-color-muted);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-small);
+  line-height: var(--leading-body);
+  font-weight: var(--font-weight-body);
+  color: var(--color-typography-muted);
+  font-family: var(--font-sans);
 }
 
 @utility typography-blockquote {
-  font-size: var(--typography-size-body);
-  line-height: var(--typography-leading-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
   font-style: italic;
-  color: var(--typography-color-muted);
-  border-left: 4px solid var(--typography-color-border);
-  padding-left: var(--typography-spacing-md);
-  margin: var(--typography-spacing-lg) 0;
-  font-family: var(--typography-font-sans);
+  color: var(--color-typography-muted);
+  border-left: 4px solid var(--color-typography-border);
+  padding-left: var(--spacing-typography-md);
+  margin: var(--spacing-typography-lg) 0;
+  font-family: var(--font-sans);
 }
 
 @utility typography-code {
-  font-size: var(--typography-size-small);
-  font-family: var(--typography-font-mono);
-  background-color: var(--typography-color-code-bg);
-  color: var(--typography-color-code-text);
+  font-size: var(--text-small);
+  font-family: var(--font-mono);
+  background-color: var(--color-typography-code-bg);
+  color: var(--color-typography-code-text);
   padding: 0.125rem 0.375rem;
-  border-radius: 0.25rem;
-  font-weight: 500;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
 }
 
 @utility typography-pre {
-  font-size: var(--typography-size-small);
-  font-family: var(--typography-font-mono);
-  background-color: var(--typography-color-code-bg);
-  color: var(--typography-color-code-text);
-  padding: var(--typography-spacing-md);
-  border-radius: 0.5rem;
+  font-size: var(--text-small);
+  font-family: var(--font-mono);
+  background-color: var(--color-typography-code-bg);
+  color: var(--color-typography-code-text);
+  padding: var(--spacing-typography-md);
+  border-radius: var(--radius-lg);
   overflow-x: auto;
-  margin: var(--typography-spacing-lg) 0;
-  line-height: 1.5;
+  margin: var(--spacing-typography-lg) 0;
+  line-height: var(--leading-normal);
 }
 
 @utility typography-ul {
-  margin: var(--typography-spacing-md) 0;
-  padding-left: var(--typography-spacing-lg);
+  margin: var(--spacing-typography-md) 0;
+  padding-left: var(--spacing-typography-lg);
   list-style-type: disc;
 }
 
 @utility typography-ol {
-  margin: var(--typography-spacing-md) 0;
-  padding-left: var(--typography-spacing-lg);
+  margin: var(--spacing-typography-md) 0;
+  padding-left: var(--spacing-typography-lg);
   list-style-type: decimal;
 }
 
 @utility typography-li {
-  font-size: var(--typography-size-body);
-  line-height: var(--typography-leading-body);
-  color: var(--typography-color-body);
-  margin-bottom: var(--typography-spacing-xs);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-typography-body);
+  margin-bottom: var(--spacing-typography-xs);
+  font-family: var(--font-sans);
 }
 
 @utility typography-strong {
-  font-weight: var(--typography-weight-bold);
-  color: var(--typography-color-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-typography-heading);
 }
 
 @utility typography-em {
   font-style: italic;
-  color: var(--typography-color-body);
+  color: var(--color-typography-body);
 }
 
 @utility typography-link {
-  color: #2563eb;
+  color: var(--color-blue-600);
   text-decoration: underline;
-  text-decoration-color: #93c5fd;
+  text-decoration-color: var(--color-blue-300);
   text-underline-offset: 2px;
   transition: all 0.2s ease;
 
   @variant hover {
-    color: #1d4ed8;
-    text-decoration-color: #2563eb;
+    color: var(--color-blue-700);
+    text-decoration-color: var(--color-blue-600);
   }
 }
 
-/* --- Prose Wrapper (follows typography guidelines) --- */
+/* --- Prose Wrapper --- */
 @utility prose {
-  font-size: var(--typography-size-body);
-  line-height: var(--typography-leading-body);
-  color: var(--typography-color-body);
-  font-family: var(--typography-font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-typography-body);
+  font-family: var(--font-sans);
   max-width: 65ch;
 
   & h1 {
@@ -227,51 +227,5 @@
 
   & a {
     @apply typography-link;
-  }
-}
-
-/* --- Fluid Responsive Typography --- */
-/* Typography sizes now use clamp() for smooth scaling across all screen sizes */
-/* Formula: clamp(min-size, preferred-size + viewport-scaling, max-size) */
-
-:root {
-  /* Fluid Typography Scale using clamp() */
-  --typography-size-h1: clamp(2.25rem, 2rem + 2.5vw, 3.5rem);
-  --typography-size-h2: clamp(1.875rem, 1.625rem + 2vw, 2.75rem);
-  --typography-size-h3: clamp(1.5rem, 1.375rem + 1.25vw, 2.125rem);
-  --typography-size-h4: clamp(1.25rem, 1.125rem + 1vw, 1.75rem);
-  --typography-size-h5: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
-  --typography-size-h6: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
-  --typography-size-body: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
-  --typography-size-small: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
-
-  /* Fluid Line Heights - scale with font size for optimal readability */
-  --typography-leading-h1: clamp(2.5rem, 2.25rem + 2.5vw, 3.75rem);
-  --typography-leading-h2: clamp(2.25rem, 2rem + 2vw, 3rem);
-  --typography-leading-h3: clamp(2rem, 1.75rem + 1.25vw, 2.5rem);
-  --typography-leading-h4: clamp(1.75rem, 1.5rem + 1vw, 2.125rem);
-  --typography-leading-h5: clamp(1.75rem, 1.5rem + 0.75vw, 2rem);
-  --typography-leading-h6: clamp(1.5rem, 1.25rem + 0.5vw, 1.75rem);
-  --typography-leading-body: 1.6;
-  --typography-leading-tight: 1.3;
-
-  /* Fluid Spacing - adapts to screen size for better visual hierarchy */
-  --typography-spacing-xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.625rem);
-  --typography-spacing-sm: clamp(0.75rem, 0.675rem + 0.375vw, 0.9375rem);
-  --typography-spacing-md: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
-  --typography-spacing-lg: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
-  --typography-spacing-xl: clamp(2rem, 1.8rem + 1vw, 2.5rem);
-  --typography-spacing-2xl: clamp(2.5rem, 2.25rem + 1.25vw, 3.125rem);
-}
-
-/* --- Dark Mode Variables --- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --typography-color-heading: #f9fafb;
-    --typography-color-body: #e5e7eb;
-    --typography-color-muted: #9ca3af;
-    --typography-color-border: #4b5563;
-    --typography-color-code-bg: #374151;
-    --typography-color-code-text: #e5e7eb;
   }
 }

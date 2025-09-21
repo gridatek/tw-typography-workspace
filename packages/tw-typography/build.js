@@ -10,16 +10,20 @@ if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir, { recursive: true });
 }
 
-// Copy CSS file
-const srcCSS = path.join(__dirname, 'src', 'typography.css');
-const distCSS = path.join(distDir, 'typography.css');
+// Copy CSS files
+const files = ['index.css', 'typography.css', 'theme.css'];
 
-if (fs.existsSync(srcCSS)) {
-  fs.copyFileSync(srcCSS, distCSS);
-  console.log('✅ Copied typography.css');
-} else {
-  console.log('⚠️  typography.css not found in src/');
-}
+files.forEach((file) => {
+  const srcFile = path.join(__dirname, 'src', file);
+  const distFile = path.join(distDir, file);
+
+  if (fs.existsSync(srcFile)) {
+    fs.copyFileSync(srcFile, distFile);
+    console.log(`✅ Copied ${file}`);
+  } else {
+    console.log(`⚠️  ${file} not found in src/`);
+  }
+});
 
 // Create a simple index.js for the package
 const indexJS = `// tw-typography package
@@ -36,7 +40,7 @@ const packageJson = {
   version: '1.0.0',
   description: 'CSS Variables Typography System for Tailwind CSS v4',
   main: 'index.js',
-  files: ['typography.css', 'index.js'],
+  files: ['index.css', 'typography.css', 'theme.css', 'index.js'],
   keywords: ['css', 'typography', 'tailwindcss', 'css-variables'],
   license: 'MIT',
 };
