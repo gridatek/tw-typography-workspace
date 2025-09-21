@@ -115,16 +115,40 @@ Pre-built utilities for common typography patterns:
 
 ## 🌙 Dark Mode
 
-Dark mode is automatically handled via `prefers-color-scheme`:
+Dark mode is handled via the `.dark` class for manual control:
 
 ```css
-@media (prefers-color-scheme: dark) {
-  @theme {
-    --color-typography-heading: var(--color-gray-50);
-    --color-typography-body: var(--color-gray-200);
-    --color-typography-muted: var(--color-gray-400);
-  }
+.dark {
+  /* tw-prose dark mode colors */
+  --tw-prose-body: var(--color-gray-300);
+  --tw-prose-headings: var(--color-gray-50);
+  --tw-prose-lead: var(--color-gray-400);
+  --tw-prose-links: var(--color-gray-100);
+  /* ... and all other tw-prose dark colors */
 }
+```
+
+### Usage
+
+```html
+<!-- Light mode (default) -->
+<div class="prose">
+  <h1>Light theme heading</h1>
+  <p>Light theme content</p>
+</div>
+
+<!-- Dark mode -->
+<div class="dark">
+  <div class="prose">
+    <h1>Dark theme heading</h1>
+    <p>Dark theme content</p>
+  </div>
+</div>
+
+<!-- Or apply dark to body/html for global dark mode -->
+<body class="dark">
+  <div class="prose">All typography uses dark theme</div>
+</body>
 ```
 
 ## 🔧 Development
