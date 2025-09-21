@@ -13,25 +13,8 @@
   --typography-color-code-bg: #f3f4f6;
   --typography-color-code-text: #1f2937;
 
-  /* Typography Scale */
-  --typography-size-h1: 2.25rem;
-  --typography-size-h2: 1.875rem;
-  --typography-size-h3: 1.5rem;
-  --typography-size-h4: 1.25rem;
-  --typography-size-h5: 1.125rem;
-  --typography-size-h6: 1rem;
-  --typography-size-body: 1rem;
-  --typography-size-small: 0.875rem;
-
-  /* Line Heights */
-  --typography-leading-h1: 2.5rem;
-  --typography-leading-h2: 2.25rem;
-  --typography-leading-h3: 2rem;
-  --typography-leading-h4: 1.75rem;
-  --typography-leading-h5: 1.75rem;
-  --typography-leading-h6: 1.5rem;
-  --typography-leading-body: 1.625;
-  --typography-leading-tight: 1.25;
+  /* Typography Scale - now using fluid responsive values from tw-typography package */
+  /* Sizes and line heights are defined in the imported typography.css with clamp() */
 
   /* Font Weights */
   --typography-weight-heading: 700;
@@ -39,13 +22,8 @@
   --typography-weight-body: 400;
   --typography-weight-bold: 600;
 
-  /* Spacing */
-  --typography-spacing-xs: 0.5rem;
-  --typography-spacing-sm: 0.75rem;
-  --typography-spacing-md: 1rem;
-  --typography-spacing-lg: 1.5rem;
-  --typography-spacing-xl: 2rem;
-  --typography-spacing-2xl: 2.5rem;
+  /* Spacing - now using fluid responsive values from tw-typography package */
+  /* Spacing values are defined in the imported typography.css with clamp() */
 
   /* Font Families */
   --typography-font-sans: ui-sans-serif, system-ui, sans-serif;
