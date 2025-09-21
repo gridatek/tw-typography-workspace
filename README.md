@@ -102,6 +102,7 @@ Pre-built utilities for common typography patterns:
 - `typography-ul`, `typography-ol`, `typography-li` - List styling
 - `typography-strong`, `typography-em` - Text emphasis
 - `typography-link` - Link styling with hover states
+- `dark` - Dark mode color scheme
 
 ### Prose Wrapper
 
@@ -115,10 +116,10 @@ Pre-built utilities for common typography patterns:
 
 ## 🌙 Dark Mode
 
-Dark mode is handled via the `.dark` class for manual control:
+Dark mode is handled via the `dark` utility for manual control:
 
 ```css
-.dark {
+@utility dark {
   /* tw-prose dark mode colors */
   --tw-prose-body: var(--color-gray-300);
   --tw-prose-headings: var(--color-gray-50);
