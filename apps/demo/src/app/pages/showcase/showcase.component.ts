@@ -119,9 +119,9 @@ import { Component } from '@angular/core';
               Inline code like <code class="typography-code">const example = 'code';</code>
               and block code:
             </p>
-            <pre class="typography-pre">function scaleExample() {
+            <pre class="typography-pre">function scaleExample() &#123;
   return 'Responsive typography!';
-}</pre>
+&#125;</pre>
           </div>
 
           <!-- Blockquotes -->
